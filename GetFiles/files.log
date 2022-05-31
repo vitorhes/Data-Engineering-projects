@@ -1,0 +1,61 @@
+2022-05-31 00:21:02,861:INFO:Downloads directory created
+2022-05-31 00:21:02,861:INFO:Downloads directory already exist
+2022-05-31 00:22:02,828:INFO:Sucessfuly downloaded: Divvy_Trips_2018_Q4.zip
+2022-05-31 00:22:03,730:INFO:Sucessful extracted: Divvy_Trips_2018_Q4.zip
+2022-05-31 00:22:03,737:INFO:Sucessfuly deleted the file: Divvy_Trips_2018_Q4.zip
+2022-05-31 00:22:09,244:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q1.zip
+2022-05-31 00:22:09,597:INFO:Sucessful extracted: Divvy_Trips_2019_Q1.zip
+2022-05-31 00:22:09,598:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q1.zip
+2022-05-31 00:22:17,575:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q2.zip
+2022-05-31 00:22:18,854:INFO:Sucessful extracted: Divvy_Trips_2019_Q2.zip
+2022-05-31 00:22:18,885:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q2.zip
+2022-05-31 00:23:24,143:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q3.zip
+2022-05-31 00:23:27,620:INFO:Sucessful extracted: Divvy_Trips_2019_Q3.zip
+2022-05-31 00:23:27,644:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q3.zip
+2022-05-31 00:23:34,160:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q4.zip
+2022-05-31 00:23:34,840:INFO:Sucessful extracted: Divvy_Trips_2019_Q4.zip
+2022-05-31 00:23:34,841:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q4.zip
+2022-05-31 00:23:40,222:INFO:Sucessfuly downloaded: Divvy_Trips_2020_Q1.zip
+2022-05-31 00:23:40,770:INFO:Sucessful extracted: Divvy_Trips_2020_Q1.zip
+2022-05-31 00:23:40,771:INFO:Sucessfuly deleted the file: Divvy_Trips_2020_Q1.zip
+2022-05-31 00:23:41,474:WARNING:The URL is invalid:https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip. Skipping to the next file
+2022-05-31 03:27:59,612:INFO:Downloads directory already exist
+2022-05-31 03:28:05,753:INFO:Sucessfuly downloaded: Divvy_Trips_2018_Q4.zip
+2022-05-31 03:28:08,775:INFO:Sucessful extracted: Divvy_Trips_2018_Q4.zip
+2022-05-31 03:28:08,824:INFO:Sucessfuly deleted the file: Divvy_Trips_2018_Q4.zip
+2022-05-31 03:28:12,850:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q1.zip
+2022-05-31 03:28:14,940:INFO:Sucessful extracted: Divvy_Trips_2019_Q1.zip
+2022-05-31 03:28:14,949:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q1.zip
+2022-05-31 03:30:14,936:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q2.zip
+2022-05-31 03:30:20,729:INFO:Sucessful extracted: Divvy_Trips_2019_Q2.zip
+2022-05-31 03:30:20,746:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q2.zip
+2022-05-31 03:31:32,323:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q3.zip
+2022-05-31 03:31:40,290:INFO:Sucessful extracted: Divvy_Trips_2019_Q3.zip
+2022-05-31 03:31:40,304:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q3.zip
+2022-05-31 03:32:07,886:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q4.zip
+2022-05-31 03:32:12,164:INFO:Sucessful extracted: Divvy_Trips_2019_Q4.zip
+2022-05-31 03:32:12,174:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q4.zip
+2022-05-31 03:32:18,417:INFO:Sucessfuly downloaded: Divvy_Trips_2020_Q1.zip
+2022-05-31 03:32:21,008:INFO:Sucessful extracted: Divvy_Trips_2020_Q1.zip
+2022-05-31 03:32:21,099:INFO:Sucessfuly deleted the file: Divvy_Trips_2020_Q1.zip
+2022-05-31 03:32:21,710:WARNING:The URL is invalid:https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip. Skipping to the next file
+2022-05-31 18:28:31,416:INFO:Downloads directory created
+2022-05-31 18:30:40,261:INFO:Sucessfuly downloaded: Divvy_Trips_2018_Q4.zip
+2022-05-31 18:30:46,024:INFO:Sucessful extracted: Divvy_Trips_2018_Q4.zip
+2022-05-31 18:30:46,036:INFO:Sucessfuly deleted the file: Divvy_Trips_2018_Q4.zip
+2022-05-31 18:31:44,527:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q1.zip
+2022-05-31 18:31:46,583:INFO:Sucessful extracted: Divvy_Trips_2019_Q1.zip
+2022-05-31 18:31:46,591:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q1.zip
+2022-05-31 18:36:03,785:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q2.zip
+2022-05-31 18:36:09,705:INFO:Sucessful extracted: Divvy_Trips_2019_Q2.zip
+2022-05-31 18:36:09,716:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q2.zip
+2022-05-31 18:45:09,696:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q3.zip
+2022-05-31 18:45:30,507:INFO:Sucessful extracted: Divvy_Trips_2019_Q3.zip
+2022-05-31 18:45:30,545:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q3.zip
+2022-05-31 18:49:18,106:INFO:Sucessfuly downloaded: Divvy_Trips_2019_Q4.zip
+2022-05-31 18:49:28,173:INFO:Sucessful extracted: Divvy_Trips_2019_Q4.zip
+2022-05-31 18:49:28,192:INFO:Sucessfuly deleted the file: Divvy_Trips_2019_Q4.zip
+2022-05-31 18:53:39,798:INFO:Sucessfuly downloaded: Divvy_Trips_2020_Q1.zip
+2022-05-31 18:53:47,656:INFO:Sucessful extracted: Divvy_Trips_2020_Q1.zip
+2022-05-31 18:53:47,683:INFO:Sucessfuly deleted the file: Divvy_Trips_2020_Q1.zip
+2022-05-31 18:53:48,328:WARNING:The URL is invalid:https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip. Skipping to the next file
