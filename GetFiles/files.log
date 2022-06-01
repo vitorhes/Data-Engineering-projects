@@ -59,3 +59,84 @@
 2022-05-31 18:53:47,656:INFO:Sucessful extracted: Divvy_Trips_2020_Q1.zip
 2022-05-31 18:53:47,683:INFO:Sucessfuly deleted the file: Divvy_Trips_2020_Q1.zip
 2022-05-31 18:53:48,328:WARNING:The URL is invalid:https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip. Skipping to the next file
+2022-05-31 18:00:06,934:INFO:Downloads directory created
+2022-05-31 18:06:12,040:INFO:Downloads directory already exist
+2022-05-31 18:06:49,666:INFO:Downloads directory already exist
+2022-05-31 18:08:48,512:INFO:Downloads directory created
+2022-05-31 18:10:19,010:INFO:Downloads directory already exist
+2022-05-31 18:12:25,950:INFO:Downloads directory already exist
+2022-05-31 18:13:04,532:INFO:Downloads directory already exist
+2022-05-31 18:49:21,446:INFO:Downloads directory already exist
+2022-05-31 18:49:39,288:INFO:Downloads directory already exist
+2022-05-31 18:50:48,772:INFO:Downloads directory already exist
+2022-05-31 18:54:30,340:INFO:Downloads directory already exist
+2022-05-31 19:01:02,126:INFO:Downloads directory already exist
+2022-05-31 19:02:02,118:INFO:Downloads directory already exist
+2022-05-31 19:02:35,801:INFO:Downloads directory already exist
+2022-05-31 19:03:03,019:INFO:Downloads directory already exist
+2022-05-31 19:03:14,385:INFO:Downloads directory already exist
+2022-05-31 19:04:36,791:INFO:Downloads directory already exist
+2022-05-31 19:05:10,854:INFO:Downloads directory already exist
+2022-05-31 19:06:18,969:INFO:Downloads directory already exist
+2022-05-31 19:06:29,404:INFO:Downloads directory already exist
+2022-05-31 19:07:16,359:INFO:Downloads directory already exist
+2022-05-31 19:11:54,730:INFO:Downloads directory already exist
+2022-05-31 19:12:45,236:INFO:Downloads directory already exist
+2022-05-31 19:13:04,942:INFO:Downloads directory already exist
+2022-05-31 19:13:17,745:INFO:Downloads directory already exist
+2022-05-31 19:13:39,089:INFO:Downloads directory already exist
+2022-05-31 19:19:33,939:INFO:Downloads directory already exist
+2022-05-31 19:20:54,789:INFO:Downloads directory already exist
+2022-05-31 19:21:19,069:INFO:Downloads directory already exist
+2022-05-31 19:25:09,293:INFO:Downloads directory already exist
+2022-05-31 19:25:34,155:INFO:Downloads directory already exist
+2022-05-31 19:26:16,777:INFO:Downloads directory already exist
+2022-06-01 00:01:48,952:INFO:Downloads directory already exist
+2022-06-01 00:03:44,172:INFO:Downloads directory already exist
+2022-06-01 00:03:48,687:INFO:Downloads directory already exist
+2022-06-01 00:04:58,666:ERROR:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<get_files() done, defined at c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py:28> exception=AssertionError()>
+Traceback (most recent call last):
+  File "c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py", line 34, in get_files
+    assert response.status == 200
+AssertionError
+2022-06-01 00:08:55,158:INFO:Downloads directory created
+2022-06-01 00:12:15,041:ERROR:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<get_files() done, defined at c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py:28> exception=AssertionError()>
+Traceback (most recent call last):
+  File "c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py", line 34, in get_files
+    assert response.status == 200
+AssertionError
+2022-06-01 00:16:17,012:INFO:Downloads directory created
+2022-06-01 00:16:17,015:INFO:Downloading files
+2022-06-01 00:16:29,133:INFO:Writing to file: Divvy_Trips_2020_Q1.zip
+2022-06-01 00:16:35,926:INFO:Writing to file: Divvy_Trips_2019_Q4.zip
+2022-06-01 00:16:39,580:INFO:Writing to file: Divvy_Trips_2019_Q1.zip
+2022-06-01 00:17:02,795:INFO:Writing to file: Divvy_Trips_2018_Q4.zip
+2022-06-01 00:17:56,565:INFO:Writing to file: Divvy_Trips_2019_Q2.zip
+2022-06-01 00:20:06,010:INFO:Writing to file: Divvy_Trips_2019_Q3.zip
+2022-06-01 00:20:06,221:INFO:Loop closed. Finished
+2022-06-01 00:20:06,223:ERROR:Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<get_files() done, defined at c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py:28> exception=AssertionError()>
+Traceback (most recent call last):
+  File "c:\Users\Vitor\Desktop\Small Projects\GetFiles\main.py", line 34, in get_files
+    assert response.status == 200
+AssertionError
+2022-06-01 00:20:49,735:INFO:Downloads directory created
+2022-06-01 00:20:49,736:INFO:Downloading files
+2022-06-01 00:20:49,738:INFO:Downloading file: Divvy_Trips_2018_Q4.zip
+2022-06-01 00:20:49,814:INFO:Downloading file: Divvy_Trips_2019_Q1.zip
+2022-06-01 00:20:49,818:INFO:Downloading file: Divvy_Trips_2019_Q2.zip
+2022-06-01 00:20:49,819:INFO:Downloading file: Divvy_Trips_2019_Q3.zip
+2022-06-01 00:20:49,820:INFO:Downloading file: Divvy_Trips_2019_Q4.zip
+2022-06-01 00:20:49,820:INFO:Downloading file: Divvy_Trips_2020_Q1.zip
+2022-06-01 00:20:49,821:INFO:Downloading file: Divvy_Trips_2220_Q1.zip
+2022-06-01 00:22:07,135:INFO:Downloads directory created
+2022-06-01 00:22:07,136:INFO:Downloading files
+2022-06-01 00:22:07,140:INFO:Downloading file: Divvy_Trips_2018_Q4.zip
+2022-06-01 00:22:07,202:INFO:Downloading file: Divvy_Trips_2019_Q1.zip
+2022-06-01 00:22:07,203:INFO:Downloading file: Divvy_Trips_2019_Q2.zip
+2022-06-01 00:22:07,207:INFO:Downloading file: Divvy_Trips_2019_Q3.zip
+2022-06-01 00:22:07,209:INFO:Downloading file: Divvy_Trips_2019_Q4.zip
+2022-06-01 00:22:07,212:INFO:Downloading file: Divvy_Trips_2020_Q1.zip
+2022-06-01 00:22:07,213:INFO:Downloading file: Divvy_Trips_2220_Q1.zip
