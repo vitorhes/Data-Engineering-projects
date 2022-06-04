@@ -1,11 +1,10 @@
 
-import requests
+from importlib.resources import path
 import os
 import zipfile
 import logging
 import aiohttp
 import asyncio
-import re
 import aiofiles
 
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
@@ -22,11 +21,9 @@ download_uris = [
     'https://divvy-tripdata.s3.amazonaws.com/Divvy_Trips_2220_Q1.zip'
 ]
 
-DIRECTORY = "downloads"
-PATH = os.path.join(os.getcwd(), DIRECTORY)
 
-async def get_files(url):
-    #sema = asyncio.BoundedSemaphore(5)
+
+async def get_files(url,PATH):
     if url.find('/'):
         filename = url.rsplit('/', 1)[1]
     logging.info(f"Downloading file: {filename}")
@@ -36,20 +33,7 @@ async def get_files(url):
                result = await response.read()
         async with aiofiles.open(os.path.join(PATH, filename), "wb") as outfile:
 
-            outfile.write(result)
- 
-
-
-
-
-def create_filenames_dic(urls):
-        urls_dict = {}
-        for url in urls:
-            if url.find('/'):
-                filename = url.rsplit('/', 1)[1]
-            urls_dict[filename] = url
-        return urls_dict
-            
+            await outfile.write(result)
 
 
 def create_dir(path: str) -> None:
@@ -62,38 +46,41 @@ def create_dir(path: str) -> None:
     else:
         logging.info('Downloads directory already exist')
 
+def get_zipfiles_filenames(path) -> list:
 
-def download_files(url: str, file_path: str, filename: str) -> None:
-    try:
-        r = requests.get(url, allow_redirects=True)
-        open(file_path, 'wb').write(r.content)
-        logging.info(f"Successfully downloaded: {filename}")
+    zipfiles_filenames  = []
+    for filename in os.listdir(path):
+    
+        if filename.endswith(".zip"): 
+            file_path = os.path.join(path, filename)
+            zipfiles_filenames.append(file_path)
 
-    except Exception as e:
-         logging.error(f'Error when downloading the file: {e}')
+    return zipfiles_filenames
 
-  
-def unzip_files(file_path: str, destination_path:str, filename:str) -> None:
-    try:
-        with zipfile.ZipFile(file_path,"r") as zip_ref:
-            zip_ref.extractall(destination_path)
-            logging.info(f"Successfully extracted: {filename}")
-    except Exception as e:
-        logging.error(f'Error when unziping: {e}')
-       
-def deleting_zip_files(file_path: str, filename:str) -> None:
+def unzip_files(zipfile_filenames_list: list, path) -> None:
 
-    if os.path.exists(file_path):
-        os.remove(file_path)
-        logging.info(f"Successfully deleted the file: {filename}")
-        
+    for zipfile_filename in zipfile_filenames_list:
 
-def assert_url_exists(url: str) -> bool:
-    try:
-        r = requests.head(url)
-        return r.status_code == requests.codes.ok
-    except:
-        return False
+        try:
+            with zipfile.ZipFile(zipfile_filename,"r") as zip_ref:
+
+                zip_ref.extractall(path)
+                logging.info(f"Successfully extracted: {zipfile_filename}")
+
+        except Exception as e:
+            logging.error(f'Error when unziping or deleting file {zipfile_filename}. Error: {e}')
+
+def delete_zip_files(zipfile_filenames_list: list) -> None:
+
+     for zipfile_filename in zipfile_filenames_list:
+
+        try:
+
+            os.remove(zipfile_filename)
+            logging.info(f"Successfully deleted the file: {zipfile_filename}")
+
+        except Exception as e:
+            logging.error(f'Error when deleting file {zipfile_filename}. Error: {e}')
 def main():
 
 #     DIRECTORY = "downloads"
@@ -111,14 +98,23 @@ def main():
 #                 deleting_zip_files(file_path, filename)
 #         else:
 #             logging.warning(f"The URL is invalid:{url}. Skipping to the next file") 
+    DIRECTORY = "downloads"
+    PATH = os.path.join(os.getcwd(), DIRECTORY)
+
     create_dir(PATH)
     print("-----------Downloading files, please wait ---------")
     logging.info(f"Downloading files")
     loop = asyncio.get_event_loop()
-    tasks = [loop.create_task(get_files(url)) for url in download_uris]
+    tasks = [loop.create_task(get_files(url,PATH)) for url in download_uris]
     loop.run_until_complete(asyncio.wait(tasks))
     loop.close() 
-    logging.info(f"Loop closed. Finished")
-    print("All files have been downloaded. Program finished")
+
+    logging.info(f"Loop closed. Unziping files and deleting zip files")
+
+    zipfile_filenames_list = get_zipfiles_filenames(PATH)
+    unzip_files(zipfile_filenames_list,PATH)
+    delete_zip_files(zipfile_filenames_list)
+    
+    print("All files have been downloaded and extracted. Program finished")
 if __name__ == '__main__':
     main()
