@@ -6,7 +6,7 @@ services:
       - .:/app
     command: python3 -m pytest
   run:
-    image: "exercise-1"
+    image: "get-files"
     volumes:
       - .:/app
     command: python3 main.py
