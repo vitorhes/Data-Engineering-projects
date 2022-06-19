@@ -12,7 +12,7 @@ common, and this will ensure you get an introduction to that topic.
 1. Change directories at the command line 
    to be inside the `Exercise-3` folder `cd Exercises/Exercise-3`
    
-2. Run `docker build --tag=exercise-3 .` to build the `Docker` image.
+2. Run `docker build --tag=bucket-crawl .` to build the `Docker` image.
 
 3. There is a file called `main.py` in the `Exercise-3` directory, this
 is where you `Python` code to complete the exercise should go.
